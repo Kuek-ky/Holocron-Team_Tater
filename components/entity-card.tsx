@@ -18,7 +18,7 @@ export function EntityCard({ category, entity }: Props) {
           src={entity.image || "/placeholder.svg"}
           alt={entity.name}
           loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover transition-all duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0"
         />
         <div
           aria-hidden
