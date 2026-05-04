@@ -30,7 +30,7 @@ export function EntityCard({ category, entity }: Props) {
       </div>
 
       <div className="flex flex-1 flex-col gap-1.5 p-4">
-        <h3 className="text-pretty font-display text-base font-semibold leading-tight tracking-tight text-foreground transition-colors group-hover:text-primary">
+        <h3 className="capitalize text-pretty font-display text-base font-semibold leading-tight tracking-tight text-foreground transition-colors group-hover:text-primary">
           {entity.name}
         </h3>
         <p className="line-clamp-2 text-sm leading-relaxed text-muted-foreground">
