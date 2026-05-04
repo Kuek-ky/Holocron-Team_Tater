@@ -15,7 +15,7 @@ export function SiteHeader() {
         <Link href="/" className="group flex items-center gap-2.5" aria-label="Holocron home">
           <span
             aria-hidden
-            className="grid h-9 w-9 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary transition-colors group-hover:bg-primary/20"
+            className="grid h-9 w-9 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary transition-all duration-300 animate-pulse group-hover:animate-none group-hover:bg-primary/20 group-hover:shadow-[0_0_15px_oklch(0.9_0.18_95)]"
           >
             <Sparkles className="h-4 w-4" />
           </span>
