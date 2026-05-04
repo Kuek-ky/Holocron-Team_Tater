@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, ExternalLink } from "lucide-react"
+import { ArrowLeft, ExternalLink, Hash} from "lucide-react"
 
 import {
   CATEGORY_KEYS,
@@ -80,8 +80,8 @@ export default async function EntityPage({ params }: Props) {
                   {meta.label}
                 </Link>
                 <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
-                  ID {entity._id}
-                </span>
+
+                <Hash className="inline h-3 w-3 mr-0.5 -mt-0.5" />{entity._id}                </span>
               </div>
 
               <h1 className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
