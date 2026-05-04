@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Hash } from "lucide-react"
 import { slugify, type Category, type Entity } from "@/lib/databank"
 
 type Props = {
@@ -25,7 +26,7 @@ export function EntityCard({ category, entity }: Props) {
           className="absolute inset-0 bg-linear-to-t from-card via-card/40 to-transparent"
         />
         <div className="absolute left-3 top-3 rounded-full border border-border/80 bg-background/70 px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground backdrop-blur">
-          ID {entity._id.slice(-5)}
+<Hash className="inline h-3 w-3 mr-0.5 -mt-0.5" />{entity._id.slice(-5)}
         </div>
       </div>
 
