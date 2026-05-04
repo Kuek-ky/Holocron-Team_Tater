@@ -36,11 +36,9 @@ export function EntityCard({ category, entity }: Props) {
         <p className="line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {entity.description}
         </p>
-        <span className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary/80 transition-colors group-hover:text-primary">
-          View dossier
-          <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
-            →
-          </span>
+        <span className="mt-auto inline-flex items-center gap-1 text-xs font-medium text-primary/80 transition-colors group-hover:text-primary">
+          View {category.slice(0, -1)}
+          <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
         </span>
       </div>
     </Link>
