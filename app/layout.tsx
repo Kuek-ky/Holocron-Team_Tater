@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import { BackToTop } from "@/components/back-to-top"
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body className="font-sans antialiased min-h-screen">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <BackToTop /> {/* <-- ADD THIS */}
       </body>
     </html>
   )
