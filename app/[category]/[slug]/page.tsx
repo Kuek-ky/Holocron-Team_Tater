@@ -84,7 +84,7 @@ export default async function EntityPage({ params }: Props) {
                 </span>
               </div>
 
-              <h1 className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+              <h1 className="capitalize text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
                 {entity.name}
               </h1>
 

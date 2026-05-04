@@ -18,7 +18,7 @@ export function EntityCard({ category, entity }: Props) {
           src={entity.image || "/placeholder.svg"}
           alt={entity.name}
           loading="lazy"
-          className="h-full w-full object-cover transition-all duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div
           aria-hidden
@@ -30,15 +30,17 @@ export function EntityCard({ category, entity }: Props) {
       </div>
 
       <div className="flex flex-1 flex-col gap-1.5 p-4">
-        <h3 className="text-pretty font-display text-base font-semibold leading-tight tracking-tight text-foreground transition-colors group-hover:text-primary">
+        <h3 className="capitalize text-pretty font-display text-base font-semibold leading-tight tracking-tight text-foreground transition-colors group-hover:text-primary">
           {entity.name}
         </h3>
         <p className="line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {entity.description}
         </p>
-        <span className="mt-auto inline-flex items-center gap-1 text-xs font-medium text-primary/80 transition-colors group-hover:text-primary">
-          View {category.slice(0, -1)}
-          <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
+        <span className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary/80 transition-colors group-hover:text-primary">
+          View dossier
+          <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
+            →
+          </span>
         </span>
       </div>
     </Link>
